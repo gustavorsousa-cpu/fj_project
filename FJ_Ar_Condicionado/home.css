@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Kaushan+Script&family=Pathway+Gothic+One&display=swap');
-
 /* ==========================================================
    1. VARIÁVEIS
    Toda a paleta e as fontes do site ficam nomeadas aqui.
@@ -18,8 +16,8 @@
     --branco:       #ffffff;
     --whatsapp:     #25D366;   /* verde oficial do WhatsApp */
 
-    --fonte-titulo: 'Bebas Neue', sans-serif;
-    --fonte-script: 'Kaushan Script', cursive;
+    --fonte-titulo: "Arial Narrow", "Roboto Condensed", Arial, sans-serif;
+    --fonte-script: Georgia, "Times New Roman", serif;
     --fonte-texto:  Arial, Helvetica, sans-serif;
 }
 
@@ -35,9 +33,13 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--ciano-bg);
-    scroll-behavior: smooth; /* rolagem suave ao clicar em links tipo #servicos */
+    min-width: 320px;
 }
 
 /* ==========================================================
@@ -53,11 +55,16 @@ nav{
 }
 
 /* logo fixada dentro do próprio nav, colada à esquerda */
-.logo{
+.logo-link{
     position: absolute;
     left: 30px;
     top: 50%;
     transform: translateY(-50%);
+    line-height: 0;
+}
+
+.logo{
+    display: block;
     height: 76px;
     width: 76px;
     object-fit: contain;     /* mantém a proporção da imagem sem distorcer */
@@ -78,10 +85,15 @@ a{
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-nav a:hover{
+nav ul a:hover{
     background-color: var(--azul-claro);
     padding: 6px 16px;
     border-radius: 30px;
+}
+
+a:focus-visible{
+    outline: 3px solid var(--azul-escuro);
+    outline-offset: 4px;
 }
 
 /* ==========================================================
@@ -333,7 +345,7 @@ h1{
         padding-top: 70px; /* abre espaço pra logo não sobrepor os links */
     }
 
-    .logo{
+    .logo-link{
         left: 50%;
         top: 16px;
         transform: translateX(-50%);
@@ -348,5 +360,19 @@ h1{
         height: 52px;
         bottom: 16px;
         right: 16px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after{
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
     }
 }

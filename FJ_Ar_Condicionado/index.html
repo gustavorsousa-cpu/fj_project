@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Instalação, manutenção, higienização e assistência técnica de ar-condicionado residencial e comercial.">
+    <meta name="robots" content="index, follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#03045e">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
 
     <!-- Ícone que aparece na aba do navegador -->
-    <link rel="shortcut icon" href="Imagens/Logo01.png" type="image/x-icon">
+    <link rel="icon" href="Imagens/Logo01.png" type="image/png">
 
-    <title>FJ Ar Condicionado - Home</title>
+    <title>FJ Ar Condicionado | Instalação e Manutenção</title>
 
     <!-- Arquivo de estilos -->
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
-    <!-- ======================================================
-         MENU DE NAVEGAÇÃO
-         Fica no topo da página, com a logo à esquerda e os
-         links de navegação centralizados.
-         ====================================================== -->
+
     <header>
-        <nav>
-            <img src="Imagens/Logo01.png" alt="Logo FJ Ar Condicionado" class="logo">
+        <nav aria-label="Navegação principal">
+            <a href="index.html" class="logo-link" aria-label="FJ Ar Condicionado — página inicial">
+                <img src="Imagens/Logo01.png" alt="" class="logo" width="76" height="76">
+            </a>
 
             <ul>
-                <li><a href="home.html">Início</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="#quem-somos">Quem somos</a></li>
                 <li><a href="#servicos">Serviços</a></li>
             </ul>
@@ -33,11 +36,7 @@
 
     <main>
 
-        <!-- ======================================================
-             SEÇÃO HERO
-             Primeira coisa que o visitante vê: selo, título de
-             impacto e texto curto de apresentação da empresa.
-             ====================================================== -->
+
         <section class="hero">
 
             <!-- selo pequeno acima do título -->
@@ -51,7 +50,7 @@
             <div id="especial">
                 <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20falar%20com%20um%20especialista%20da%20FJ%20Ar%20Condicionado."
                    target="_blank"
-                   rel="noopener"
+                   rel="noopener noreferrer"
                    class="btn-whatsapp">
                     <!-- ícone de telefone simples em SVG, sem depender de imagem externa -->
                     <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
@@ -62,25 +61,18 @@
             </div>
         </section>
 
-        <!-- ======================================================
-             FOTO DA EQUIPE
-             ====================================================== -->
+        
         <section class="equipe">
-            <img src="Imagens/equipe01.jpeg" alt="Equipe FJ Ar Condicionado" id="pessoas">
+            <img src="Imagens/equipe01.jpeg" alt="Equipe FJ Ar Condicionado" id="pessoas" width="830" height="369" loading="lazy" decoding="async">
         </section>
 
-        <!-- ======================================================
-             QUEM SOMOS
-             ====================================================== -->
+        
         <section class="quem-somos" id="quem-somos">
             <h1>Quem somos nós?</h1>
             <p>Na FJ Ar Condicionado, acreditamos que conforto, qualidade e confiança devem fazer parte de cada serviço prestado. Somos uma empresa especializada em instalação, manutenção preventiva e corretiva, higienização e assistência técnica de sistemas de ar-condicionado, atendendo clientes residenciais e comerciais com compromisso e profissionalismo.</p>
         </section>
 
-        <!-- ======================================================
-             SERVIÇOS
-             Cards resumindo cada serviço oferecido.
-             ====================================================== -->
+     
         <section class="servicos" id="servicos">
             <h1>Nossos serviços</h1>
 
@@ -109,11 +101,7 @@
 
     </main>
 
-    <!-- ======================================================
-         RODAPÉ
-         Dividido em colunas: sobre a empresa, contato, links
-         rápidos e redes sociais.
-         ====================================================== -->
+   
     <footer class="rodape">
         <div class="rodape-coluna">
             <h3>FJ Ar Condicionado</h3>
@@ -129,28 +117,24 @@
 
         <div class="rodape-coluna">
             <h3>Links</h3>
-            <a href="home.html">Início</a>
+            <a href="index.html">Início</a>
             <a href="#quem-somos">Quem somos</a>
             <a href="#servicos">Serviços</a>
         </div>
 
         <div class="rodape-coluna">
             <h3>Redes Sociais</h3>
-            <a href="#" target="_blank" rel="noopener">Instagram</a>
-            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a>
+            <!-- Adicione o Instagram real antes da publicação. -->
+            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         </div>
     </footer>
 
     <p class="rodape-copy">&copy; 2026 FJ Ar Condicionado. Todos os direitos reservados.</p>
 
-    <!-- ======================================================
-         BOTÃO FLUTUANTE DE WHATSAPP
-         Fica fixo no canto da tela em qualquer parte da página
-         que o usuário estiver, pra facilitar o contato rápido.
-         ====================================================== -->
+    
     <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais."
        target="_blank"
-       rel="noopener"
+       rel="noopener noreferrer"
        class="whatsapp-float"
        aria-label="Falar no WhatsApp">
         <svg viewBox="0 0 24 24" width="30" height="30" fill="#ffffff" aria-hidden="true">
