@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ícone que aparece na aba do navegador -->
+    <link rel="shortcut icon" href="Imagens/Logo01.png" type="image/x-icon">
+
+    <title>FJ Ar Condicionado - Home</title>
+
+    <!-- Arquivo de estilos -->
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <!-- ======================================================
+         MENU DE NAVEGAÇÃO
+         Fica no topo da página, com a logo à esquerda e os
+         links de navegação centralizados.
+         ====================================================== -->
+    <header>
+        <nav>
+            <img src="Imagens/Logo01.png" alt="Logo FJ Ar Condicionado" class="logo">
+
+            <ul>
+                <li><a href="home.html">Início</a></li>
+                <li><a href="#quem-somos">Quem somos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ======================================================
+             SEÇÃO HERO
+             Primeira coisa que o visitante vê: selo, título de
+             impacto e texto curto de apresentação da empresa.
+             ====================================================== -->
+        <section class="hero">
+
+            <!-- selo pequeno acima do título -->
+            <h2 class="badge">Equipamento premium</h2>
+
+            <h1>Especialistas em Instalação e Manutenção de Ar-Condicionado</h1>
+
+            <p>Na FJ Ar Condicionado, oferecemos soluções completas em instalação, manutenção, higienização e assistência técnica para sistemas de climatização residenciais e comerciais. Trabalhamos com equipamentos das principais marcas do mercado, garantindo eficiência, economia de energia e máximo desempenho. Nossa equipe é especializada em entregar um serviço seguro, ágil e de qualidade, sempre buscando a solução ideal para cada ambiente.</p>
+
+            <!-- botão de call-to-action, leva até o WhatsApp -->
+            <div id="especial">
+                <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20falar%20com%20um%20especialista%20da%20FJ%20Ar%20Condicionado."
+                   target="_blank"
+                   rel="noopener"
+                   class="btn-whatsapp">
+                    <!-- ícone de telefone simples em SVG, sem depender de imagem externa -->
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.36c1.36.7 2.9 1.1 4.53 1.1h.02c5.46 0 9.9-4.45 9.9-9.9C21.87 6.45 17.5 2 12.04 2zm5.79 14.02c-.24.68-1.38 1.3-1.9 1.35-.5.06-1 .27-3.36-.7-2.84-1.17-4.65-4.06-4.79-4.25-.14-.19-1.15-1.53-1.15-2.92 0-1.39.73-2.07.99-2.35.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.42-.07.65.5.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.75 1.24 1.62 2 1.11 1 2.05 1.31 2.34 1.46.29.15.46.13.63-.08.17-.21.72-.84.91-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.93.29.15.48.22.55.34.07.13.07.72-.17 1.4z"/>
+                    </svg>
+                    Fale com um especialista
+                </a>
+            </div>
+        </section>
+
+        <!-- ======================================================
+             FOTO DA EQUIPE
+             ====================================================== -->
+        <section class="equipe">
+            <img src="Imagens/equipe01.jpeg" alt="Equipe FJ Ar Condicionado" id="pessoas">
+        </section>
+
+        <!-- ======================================================
+             QUEM SOMOS
+             ====================================================== -->
+        <section class="quem-somos" id="quem-somos">
+            <h1>Quem somos nós?</h1>
+            <p>Na FJ Ar Condicionado, acreditamos que conforto, qualidade e confiança devem fazer parte de cada serviço prestado. Somos uma empresa especializada em instalação, manutenção preventiva e corretiva, higienização e assistência técnica de sistemas de ar-condicionado, atendendo clientes residenciais e comerciais com compromisso e profissionalismo.</p>
+        </section>
+
+        <!-- ======================================================
+             SERVIÇOS
+             Cards resumindo cada serviço oferecido.
+             ====================================================== -->
+        <section class="servicos" id="servicos">
+            <h1>Nossos serviços</h1>
+
+            <div class="servicos-grid">
+                <div class="servico-card">
+                    <h3>Instalação</h3>
+                    <p>Instalação completa de aparelhos residenciais e comerciais, com toda a segurança necessária.</p>
+                </div>
+
+                <div class="servico-card">
+                    <h3>Manutenção</h3>
+                    <p>Manutenção preventiva e corretiva para manter o equipamento funcionando com máxima eficiência.</p>
+                </div>
+
+                <div class="servico-card">
+                    <h3>Higienização</h3>
+                    <p>Limpeza especializada que garante ar mais saudável e prolonga a vida útil do aparelho.</p>
+                </div>
+
+                <div class="servico-card">
+                    <h3>Assistência técnica</h3>
+                    <p>Diagnóstico e reparo rápido para qualquer problema no seu sistema de climatização.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================================================
+         RODAPÉ
+         Dividido em colunas: sobre a empresa, contato, links
+         rápidos e redes sociais.
+         ====================================================== -->
+    <footer class="rodape">
+        <div class="rodape-coluna">
+            <h3>FJ Ar Condicionado</h3>
+            <p>Especialistas em instalação, manutenção e higienização de sistemas de climatização.</p>
+        </div>
+
+        <div class="rodape-coluna">
+            <h3>Contato</h3>
+            <p>(11) 99999-9999</p>
+            <p>contato@fjarcondicionado.com</p>
+            <p>São Paulo, SP</p>
+        </div>
+
+        <div class="rodape-coluna">
+            <h3>Links</h3>
+            <a href="home.html">Início</a>
+            <a href="#quem-somos">Quem somos</a>
+            <a href="#servicos">Serviços</a>
+        </div>
+
+        <div class="rodape-coluna">
+            <h3>Redes Sociais</h3>
+            <a href="#" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+    </footer>
+
+    <p class="rodape-copy">&copy; 2026 FJ Ar Condicionado. Todos os direitos reservados.</p>
+
+    <!-- ======================================================
+         BOTÃO FLUTUANTE DE WHATSAPP
+         Fica fixo no canto da tela em qualquer parte da página
+         que o usuário estiver, pra facilitar o contato rápido.
+         ====================================================== -->
+    <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20mais."
+       target="_blank"
+       rel="noopener"
+       class="whatsapp-float"
+       aria-label="Falar no WhatsApp">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="#ffffff" aria-hidden="true">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.36c1.36.7 2.9 1.1 4.53 1.1h.02c5.46 0 9.9-4.45 9.9-9.9C21.87 6.45 17.5 2 12.04 2zm5.79 14.02c-.24.68-1.38 1.3-1.9 1.35-.5.06-1 .27-3.36-.7-2.84-1.17-4.65-4.06-4.79-4.25-.14-.19-1.15-1.53-1.15-2.92 0-1.39.73-2.07.99-2.35.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.42-.07.65.5.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.75 1.24 1.62 2 1.11 1 2.05 1.31 2.34 1.46.29.15.46.13.63-.08.17-.21.72-.84.91-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.93.29.15.48.22.55.34.07.13.07.72-.17 1.4z"/>
+        </svg>
+    </a>
+
+</body>
+</html>
