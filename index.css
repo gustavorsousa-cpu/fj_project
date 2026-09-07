@@ -109,6 +109,12 @@ section.al{
     border-radius: 10px;
     object-fit: cover;
     margin: 10px;
+    transition: 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dif:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(41, 197, 246, 0.3);
 }
 
 .grid-ben{
@@ -167,4 +173,96 @@ section.al{
     padding: 16px 0;
     font-size: 0.85rem;
     color: #8ea0b3;
+}
+
+.reviews-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.reviews-section h2 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 2.2rem;
+    color: #07c1fa;
+    margin-bottom: 6px;
+}
+
+.reviews-subtitle {
+    color: #505c63;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+}
+
+.reviews-summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 36px;
+}
+
+.reviews-score {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 2.4rem;
+}
+
+.reviews-stars {
+    color: #fabe26;
+}
+
+.reviews-count {
+    color: #03141f;
+    font-size: 0.85rem;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background: #14304a;
+    border: 1px solid rgba(41, 197, 246, 0.15);
+    border-radius: 12px;
+    padding: 22px;
+    text-align: left;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.review-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #1a8fb3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #061929;
+    flex-shrink: 0;
+}
+
+.review-author {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.review-stars-small {
+    color: #ffc93c;
+    font-size: 0.85rem;
+}
+
+.review-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #9fb8c7;
 }
